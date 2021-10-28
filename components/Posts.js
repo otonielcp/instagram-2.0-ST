@@ -1,7 +1,7 @@
 /** @format */
 
 import Post from './Post';
-// import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useEffect, useState } from 'react';
 
@@ -15,10 +15,6 @@ function Posts() {
 				setPosts(snapshot.docs);
 			},
 		);
-
-		useEffect(() => {
-			return () => unsubcribe();
-		}, []); //eslint-disable-line
 
 		return () => {
 			unsubcribe();
