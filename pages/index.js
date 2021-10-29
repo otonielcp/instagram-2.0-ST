@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll bg-gray-50 scrollbar-hide">
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Instagram 2.0</title>
       </Head>
